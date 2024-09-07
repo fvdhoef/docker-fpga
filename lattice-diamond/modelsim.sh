@@ -17,4 +17,5 @@ docker run -it -d --rm -e DISPLAY="${DISPLAY}" \
   -u "${USER}" \
   -w "${HOME}" \
   diamond:"${USER}" \
-  /bin/bash -c /opt/docker-fpga/run.sh
+  /bin/bash -c /usr/local/diamond/3.13/modeltech/linuxloem/vsim
+  

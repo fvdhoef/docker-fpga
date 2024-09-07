@@ -14,6 +14,7 @@ RUN yum update -y && \
     libXft.i686 libXrender.i686 libpng.i686 libuuid.i686 libX11.i686 \
     libXau.i686 libxcb.i686 libXext.i686 && \
   yum install -y perl tcsh libXScrnSaver && \
+  yum install -y mesa-libGL gstreamer1-plugins-base libgcc.i686 libstdc++.i686 && \
   yum install -y firefox && \
   yum clean all -y
 

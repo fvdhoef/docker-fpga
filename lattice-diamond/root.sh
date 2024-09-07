@@ -3,6 +3,7 @@ set -euo pipefail
 
 NET_DEVICE=`ip route show default | awk '{print $5}'`
 MAC_ADDRESS=`cat /sys/class/net/"${NET_DEVICE}"/address`
+MAC_ADDRESS=00:15:5d:e6:1e:8b
 
 ID=`docker run -dit -e DISPLAY="${DISPLAY}" \
   --mac-address="${MAC_ADDRESS}" \
